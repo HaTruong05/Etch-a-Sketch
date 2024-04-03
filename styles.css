@@ -1,0 +1,36 @@
+body {
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.square{
+    padding: 16px;
+}
+
+.square:hover {
+    background-color: gray;
+}
+
+.row, body{
+    display: flex;
+}
+
+.top-edge{
+    border-top: 5px solid black;
+}
+
+.bottom-edge{
+    border-bottom: 5px solid black;
+}
+
+.right-edge{
+    border-right: 5px solid black;
+}
+
+.left-edge{
+    border-left: 5px solid black;
+}
+
+
