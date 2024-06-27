@@ -14,6 +14,7 @@ function makeBoard(){
         for (let j = 0; j < COL; j++){
             const square = document.createElement("div");
             square.classList.add("square");
+            square.addEventListener('mouseover', (e) => {e.target.classList.add("square-hover")})
             if (j === COL - 1){
                 square.classList.add("right-edge")
             } else if (j === 0){

@@ -10,7 +10,7 @@ body {
     height: 25px;
 }
 
-.square:hover {
+.square-hover {
     background-color: gray;
 }
 
