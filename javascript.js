@@ -1,6 +1,7 @@
 const GEN = document.querySelector('#genBoard');
 const MAX_PIX = 100;
 const MIN_PIX = 16;
+const SIZE = 560;
 
 function makeBoard(n){
     const container = document.querySelector(".container")
@@ -16,15 +17,16 @@ function makeBoard(n){
             row.classList.add("top-edge");
         }
         for (let j = 0; j < n; j++){
-            const square = document.createElement("div");
-            square.classList.add("square");
-            square.addEventListener('mouseover', (e) => {e.target.classList.add("square-hover")});
+            const cell = document.createElement("div");
+            cell.style.width = SIZE/n + "px";
+            cell.style.height = SIZE/n + "px";
+            cell.addEventListener('mouseover', (e) => {e.target.classList.add("square-hover")});
             if (j === n - 1){
-                square.classList.add("right-edge");
+                cell.classList.add("right-edge");
             } else if (j === 0){
-                square.classList.add("left-edge");
+                cell.classList.add("left-edge");
             }
-            row.appendChild(square);
+            row.appendChild(cell);
         }
         container.appendChild(row);
     }

@@ -7,11 +7,6 @@ body {
     box-sizing: border-box;
 }
 
-.square{
-    width: 35px;
-    height: 35px;
-}
-
 .square-hover {
     background-color: gray;
 }
